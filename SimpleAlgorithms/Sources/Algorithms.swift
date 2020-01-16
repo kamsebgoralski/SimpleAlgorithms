@@ -6,8 +6,6 @@
 //  Copyright © 2020 Kamil Góralski. All rights reserved.
 //
 
-import Foundation
-
 public class Algorithms {
     
     public class func linearSearch<T: Equatable>(of value: T, at elements: [T]) -> Int? {

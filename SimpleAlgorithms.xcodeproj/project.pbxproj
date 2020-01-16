@@ -73,8 +73,8 @@
 		8E3881E023CFDF03004FFB5F /* SimpleAlgorithms */ = {
 			isa = PBXGroup;
 			children = (
+				8E61FDCC23CFF416005FDBA4 /* Sources */,
 				8E3881E123CFDF03004FFB5F /* SimpleAlgorithms.h */,
-				8E61FDC823CFDFFF005FDBA4 /* Algorithms.swift */,
 				8E3881E223CFDF03004FFB5F /* Info.plist */,
 			);
 			path = SimpleAlgorithms;
@@ -87,6 +87,14 @@
 				8E3881EE23CFDF03004FFB5F /* Info.plist */,
 			);
 			path = SimpleAlgorithmsTests;
+			sourceTree = "<group>";
+		};
+		8E61FDCC23CFF416005FDBA4 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				8E61FDC823CFDFFF005FDBA4 /* Algorithms.swift */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -359,6 +367,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.01;
 				PRODUCT_BUNDLE_IDENTIFIER = com.goralski.SimpleAlgorithms;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -385,6 +394,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.01;
 				PRODUCT_BUNDLE_IDENTIFIER = com.goralski.SimpleAlgorithms;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;

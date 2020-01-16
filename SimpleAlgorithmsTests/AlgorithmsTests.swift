@@ -56,7 +56,7 @@ class AlgorithmsTests: XCTestCase {
     
     func testLinearSearchFoundForStringDouble() {
 
-        let value = SImpleAlgorithms.linearSearch(of: 0.5, at: [1, 0.4, 50, 0.5, 1.0])
+        let value = Algorithms.linearSearch(of: 0.5, at: [1, 0.4, 50, 0.5, 1.0])
 
         XCTAssertEqual(value, 3)
     }
