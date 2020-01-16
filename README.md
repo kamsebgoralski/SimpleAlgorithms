@@ -21,8 +21,7 @@ pod 'SimpleAlgorithms'
 Add `import SimpleAlgorithms` to your source code unless you used the file setup method.
 
 ```Swift
-let algorithms = Algorithms()
-algorithms.linearSearch(of: "hello world", at: ["value1", "value", "hello world"])
+let index = Algorithms.linearSearch(of: "hello world", at: ["value1", "value", "hello world"])
 ```
 
 ## Available algorithms

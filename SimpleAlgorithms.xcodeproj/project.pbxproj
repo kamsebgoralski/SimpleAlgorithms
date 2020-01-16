@@ -56,7 +56,8 @@
 			isa = PBXGroup;
 			children = (
 				8E3881E023CFDF03004FFB5F /* SimpleAlgorithms */,
-				8E3881EB23CFDF03004FFB5F /* SimpleAlgorithmsTests */,
+				8E61FDCC23CFF416005FDBA4 /* Sources */,
+				8E79857E23D0A005008C1D26 /* Tests */,
 				8E3881DF23CFDF03004FFB5F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -73,7 +74,6 @@
 		8E3881E023CFDF03004FFB5F /* SimpleAlgorithms */ = {
 			isa = PBXGroup;
 			children = (
-				8E61FDCC23CFF416005FDBA4 /* Sources */,
 				8E3881E123CFDF03004FFB5F /* SimpleAlgorithms.h */,
 				8E3881E223CFDF03004FFB5F /* Info.plist */,
 			);
@@ -95,6 +95,14 @@
 				8E61FDC823CFDFFF005FDBA4 /* Algorithms.swift */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		8E79857E23D0A005008C1D26 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				8E3881EB23CFDF03004FFB5F /* SimpleAlgorithmsTests */,
+			);
+			path = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -411,7 +419,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SXYWS947AG;
-				INFOPLIST_FILE = SimpleAlgorithmsTests/Info.plist;
+				INFOPLIST_FILE = Tests/SimpleAlgorithmsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -430,7 +438,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SXYWS947AG;
-				INFOPLIST_FILE = SimpleAlgorithmsTests/Info.plist;
+				INFOPLIST_FILE = Tests/SimpleAlgorithmsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
