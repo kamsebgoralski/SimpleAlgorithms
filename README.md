@@ -22,7 +22,7 @@ pod 'SimpleAlgorithms'
 
 ### Installing with Carthage
 
-Alternatively, add `github "kamsebgoralski/SimpleAlgorithms" ~> 0.0.1` to your Cartfile and run `carthage update`.
+Alternatively, add `github "kamsebgoralski/SimpleAlgorithms"` to your Cartfile and run `carthage update`.
 
 ## Usage
 
