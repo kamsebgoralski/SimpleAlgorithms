@@ -5,16 +5,24 @@ SimpleAlgorithms is a lightweigh Swift freamowork that contains basic algorithms
 
 ## Installation
 
+### Add source
+
+Simply add [Algorithms.swift](https://github.com/kamsebgoralski/SimpleAlgorithms/blob/master/Sources/Algorithms.swift) file into your Xcode project.
+
 ### Installing with CocoaPods
 
 If you are using CocoaPods add this text to your Podfile and run `pod install`.
 
 ```bash
-platform :ios, '10.0'
+platform :ios, '8.0'
 use_frameworks!
 
 pod 'SimpleAlgorithms'
 ```
+
+### Installing with Carthage
+
+Alternatively, add `github "kamsebgoralski/SimpleAlgorithms" ~> 0.0.1` to your Cartfile and run `carthage update`.
 
 ## Usage
 
