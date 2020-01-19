@@ -54,4 +54,13 @@ public class Algorithms {
         }
     }
     
+    public class func factorial(of number: UInt) -> UInt {
+        
+        guard number > 0 else {
+            return 1
+        }
+        
+        return number * factorial(of: number - 1)
+    }
+    
 }

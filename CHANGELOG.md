@@ -1,4 +1,22 @@
-# SimpleAlgorithms version history
+# Changelog
+
+## [0.1.0](https://github.com/kamsebgoralski/SimpleAlgorithms/tree/0.1.0) (2020-01-19)
+
+## [0.0.9](https://github.com/kamsebgoralski/SimpleAlgorithms/tree/0.0.9) (2020-01-19)
+
+[Full Changelog](https://github.com/kamsebgoralski/SimpleAlgorithms/compare/0.0.8...0.0.9)
+
+## [0.0.8](https://github.com/kamsebgoralski/SimpleAlgorithms/tree/0.0.8) (2020-01-17)
+
+[Full Changelog](https://github.com/kamsebgoralski/SimpleAlgorithms/compare/0.0.7...0.0.8)
+
+## [0.0.7](https://github.com/kamsebgoralski/SimpleAlgorithms/tree/0.0.7) (2020-01-17)
+
+[Full Changelog](https://github.com/kamsebgoralski/SimpleAlgorithms/compare/0.0.6...0.0.7)
+
+## [0.0.6](https://github.com/kamsebgoralski/SimpleAlgorithms/tree/0.0.6) (2020-01-16)
+
+[Full Changelog](https://github.com/kamsebgoralski/SimpleAlgorithms/compare/0.0.5...0.0.6)
 
 ## [0.0.5](https://github.com/kamsebgoralski/SimpleAlgorithms/tree/0.0.5) (2020-01-16)
 

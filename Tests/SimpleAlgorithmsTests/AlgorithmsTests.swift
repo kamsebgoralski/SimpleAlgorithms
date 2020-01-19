@@ -144,5 +144,33 @@ class AlgorithmsTests: XCTestCase {
 
         XCTAssertEqual(value, 3)
     }
+    
+    func testFactorialForZero() {
+
+        let value = Algorithms.factorial(of: 0)
+
+        XCTAssertEqual(value, 1)
+    }
+    
+    func testFactorialForOne() {
+
+        let value = Algorithms.factorial(of: 1)
+
+        XCTAssertEqual(value, 1)
+    }
+    
+    func testFactorialForSmallNumber() {
+
+        let value = Algorithms.factorial(of: 5)
+
+        XCTAssertEqual(value, 120)
+    }
+    
+    func testFactorialForBigNumber() {
+
+        let value = Algorithms.factorial(of: 20)
+
+        XCTAssertEqual(value, 2_432_902_008_176_640_000)
+    }
 
 }
