@@ -24,6 +24,11 @@ pod 'SimpleAlgorithms'
 
 Alternatively, add `github "kamsebgoralski/SimpleAlgorithms"` to your Cartfile and run `carthage update`.
 
+### Installing with Swift Package Manager
+
+In Xcode 11+ select File > Swift Packages > Add Package Dependency....
+Enter this project's URL: https://github.com/kamsebgoralski/SimpleAlgorithms
+
 ## Usage
 
 Add `import SimpleAlgorithms` to your source code unless you used the file setup method.
