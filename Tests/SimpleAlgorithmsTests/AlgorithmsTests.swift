@@ -21,128 +21,37 @@ class AlgorithmsTests: XCTestCase {
 
     func testLinearSearchEmptyList() {
         
-        let value = Algorithms.linearSearch(of: 5, at: [])
+        let value = Algorithms.linearSearch(of: 1, at: [])
         
         XCTAssertEqual(value, nil)
     }
     
-    func testLinearSearchMoreThanOneThenSameValueOnList() {
+    func testLinearSearchMoreThanOneSameSearchValueOnList() {
 
-        let value = Algorithms.linearSearch(of: 5, at: [3, 5, 6, 5])
+        let value = Algorithms.linearSearch(of: 2, at: [3, 2, 2, 1])
 
-        XCTAssertEqual(value, 3)
+        XCTAssertEqual(value, 1)
     }
     
-    func testLinearSearchMoreThanOneThenSameValueOnListOtherThanSearched() {
-
-        let value = Algorithms.linearSearch(of: 2, at: [3, 5, 6, 5])
-
-        XCTAssertEqual(value, nil)
-    }
-    
-    func testLinearSearchFound() {
+    func testLinearSearchIntSearchValue() {
 
         let value = Algorithms.linearSearch(of: 5, at: [1, 3, 5, 6])
 
         XCTAssertEqual(value, 2)
     }
     
-    func testLinearSearchFoundForStringType() {
+    func testLinearSearchStringSearchValue() {
 
-        let value = Algorithms.linearSearch(of: "Kamil", at: ["Something", "Kamil and Magda", "Kamil", "Magda"])
-
-        XCTAssertEqual(value, 2)
-    }
-    
-    func testLinearSearchFoundForStringDouble() {
-
-        let value = Algorithms.linearSearch(of: 0.5, at: [1, 0.4, 50, 0.5, 1.0])
-
-        XCTAssertEqual(value, 3)
-    }
-    
-    func testBetterLinearSearchEmptyList() {
-        
-        let value = Algorithms.betterLinearSearch(of: 5, at: [])
-        
-        XCTAssertEqual(value, nil)
-    }
-    
-    func testBetterLinearSearchMoreThanOneThenSameValueOnList() {
-
-        let value = Algorithms.betterLinearSearch(of: 5, at: [3, 5, 6, 5])
-
-        XCTAssertEqual(value, 1)
-    }
-    
-    func testBetterLinearSearchMoreThanOneThenSameValueOnListOtherThanSearched() {
-
-        let value = Algorithms.betterLinearSearch(of: 2, at: [3, 5, 6, 5])
-
-        XCTAssertEqual(value, nil)
-    }
-    
-    func testBetterLinearSearchFound() {
-
-        let value = Algorithms.betterLinearSearch(of: 5, at: [1, 3, 5, 6])
+        let value = Algorithms.linearSearch(of: "Two", at: ["Four", "One", "Two", "Three"])
 
         XCTAssertEqual(value, 2)
     }
     
-    func testBetterLinearSearchFoundForStringType() {
+    func testLinearSearchDoubleSearchValue() {
 
-        let value = Algorithms.betterLinearSearch(of: "Kamil", at: ["Something", "Kamil and Magda", "Kamil", "Magda"])
+        let value = Algorithms.linearSearch(of: 0.1, at: [1, 0.4, 5, 1.0, 0.1])
 
-        XCTAssertEqual(value, 2)
-    }
-    
-    func testBetterLinearSearchFoundForStringDouble() {
-
-        let value = Algorithms.betterLinearSearch(of: 0.5, at: [1, 0.4, 50, 0.5, 1.0])
-
-        XCTAssertEqual(value, 3)
-    }
-    
-    func testLinearSearchWithSentinelEmptyList() {
-        
-        let value = Algorithms.linearSearchWithSentinel(of: 5, at: [])
-        
-        XCTAssertEqual(value, nil)
-    }
-    
-    func testLinearSearchWithSentinelMoreThanOneThenSameValueOnList() {
-
-        let value = Algorithms.linearSearchWithSentinel(of: 5, at: [3, 5, 6, 5])
-
-        XCTAssertEqual(value, 1)
-    }
-    
-    func testLinearSearchWithSentinelMoreThanOneThenSameValueOnListOtherThanSearched() {
-
-        let value = Algorithms.linearSearchWithSentinel(of: 2, at: [3, 5, 6, 5])
-
-        XCTAssertEqual(value, nil)
-    }
-    
-    func testLinearSearchWithSentinelFound() {
-
-        let value = Algorithms.linearSearchWithSentinel(of: 5, at: [1, 3, 5, 6])
-
-        XCTAssertEqual(value, 2)
-    }
-    
-    func testLinearSearchWithSentinelFoundForStringType() {
-
-        let value = Algorithms.linearSearchWithSentinel(of: "Kamil", at: ["Something", "Kamil and Magda", "Kamil", "Magda"])
-
-        XCTAssertEqual(value, 2)
-    }
-    
-    func testLinearSearchWithSentinelFoundForStringDouble() {
-
-        let value = Algorithms.linearSearchWithSentinel(of: 0.5, at: [1, 0.4, 50, 0.5, 1.0])
-
-        XCTAssertEqual(value, 3)
+        XCTAssertEqual(value, 4)
     }
     
     func testFactorialForZero() {
@@ -172,5 +81,32 @@ class AlgorithmsTests: XCTestCase {
 
         XCTAssertEqual(value, 2_432_902_008_176_640_000)
     }
+    
+    func testBinarySearchEmptyArray() {
+        
+        let value = Algorithms.binarySearch(searchValue: 10, in: [])
+        
+        XCTAssertEqual(value, nil)
+    }
+    
+    func testBinarySearchValueBeyondArray() {
+        
+        let value = Algorithms.binarySearch(searchValue: 9, in: [Int](0...8))
 
+        XCTAssertEqual(value, nil)
+    }
+    
+    func testBinarySearchOneElementArray() {
+        
+        let value = Algorithms.binarySearch(searchValue: 1, in: [1])
+        
+        XCTAssertEqual(value, 0)
+    }
+    
+    func testBinarySearchValueInListRange() {
+        
+        let value = Algorithms.binarySearch(searchValue: 85_942, in: [Int](1...100_000))
+        
+        XCTAssertEqual(value, 85_941)
+    }
 }
