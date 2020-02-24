@@ -93,6 +93,48 @@ public class Algorithms {
         }
 
         return copiedArray
+    }
 
+    public static func mergeSort<T: Comparable>(_ array: [T]) -> [T] {
+
+        guard array.count > 1 else {
+            return array
+        }
+
+        let middleIndex = array.count / 2
+
+        let leftArray = mergeSort(Array(array[0..<middleIndex]))
+        let rightArray = mergeSort(Array(array[middleIndex..<array.count]))
+        return merge(leftArray, rightArray)
+    }
+
+    private static func merge<T: Comparable>(_ leftArray: [T], _ rightArray: [T]) -> [T] {
+
+        var leftIndex = 0
+        var rightIndex = 0
+        var sortedArray: [T] = []
+
+        while leftIndex < leftArray.count && rightIndex < rightArray.count {
+
+            if leftArray[leftIndex] <= rightArray[rightIndex] {
+                sortedArray.append(leftArray[leftIndex])
+                leftIndex += 1
+            } else {
+                sortedArray.append(rightArray[rightIndex])
+                rightIndex += 1
+            }
+        }
+
+        while leftIndex < leftArray.count {
+            sortedArray.append(leftArray[leftIndex])
+            leftIndex += 1
+        }
+
+        while rightIndex < rightArray.count {
+            sortedArray.append(rightArray[rightIndex])
+            rightIndex += 1
+        }
+
+        return sortedArray
     }
 }

@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.1.3](https://github.com/kamsebgoralski/SimpleAlgorithms/tree/0.1.3) 
+Released on 2020-02-24
+
+### Added
+- `mergeSort` algorithm
+
 ## [0.1.2](https://github.com/kamsebgoralski/SimpleAlgorithms/tree/0.1.2) 
 Released on 2020-02-22
 

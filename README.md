@@ -44,6 +44,7 @@ let index = Algorithms.linearSearch(of: "hello world", at: ["value1", "value", "
 * binarySearch
 * selectionSort
 * insertionSort
+* mergeSort
 
 ## Feedback
 
