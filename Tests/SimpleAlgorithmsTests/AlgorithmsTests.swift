@@ -90,4 +90,16 @@ class AlgorithmsTests: XCTestCase {
     func testMergeSortRepeatedValues() {
         XCTAssertEqual(Algorithms.mergeSort([8, 4, 3, 1, 5, 2, 9, 6, 7, 1, 5, 8]), [1, 1, 2, 3, 4, 5, 5, 6, 7, 8, 8, 9])
     }
+
+    func testQuickSort() {
+        XCTAssertEqual(Algorithms.quickSort([8, 4, 3, 1, 5, 2, 9, 6, 7]), [1, 2, 3, 4, 5, 6, 7, 8, 9])
+    }
+
+    func testQuickSortEmptyArray() {
+        XCTAssertEqual(Algorithms.quickSort([Int]()), [Int]())
+    }
+
+    func testQuickSortRepeatedValues() {
+        XCTAssertEqual(Algorithms.quickSort([8, 4, 3, 1, 5, 2, 9, 6, 7, 1, 5, 8]), [1, 1, 2, 3, 4, 5, 5, 6, 7, 8, 8, 9])
+    }
 }

@@ -137,4 +137,39 @@ public class Algorithms {
 
         return sortedArray
     }
+
+    public static func quickSort<T: Comparable>(_ array: [T]) -> [T] {
+
+        guard array.count > 1 else {
+            return array
+        }
+
+        let dividedArray = divide(array)
+
+        return quickSort(dividedArray.leftSubarray) + [dividedArray.pivot] + quickSort(dividedArray.rightSubarray)
+    }
+
+    private static func divide<T: Comparable>(_ array: [T]) -> (leftSubarray: [T], rightSubarray: [T], pivot: T) {
+
+        var pivotIndex = 0
+        var copiedArray = array
+        let endIndex = copiedArray.count - 1
+
+        for index in 0..<endIndex {
+
+            if copiedArray[index] < copiedArray[endIndex] {
+                let temp = copiedArray[pivotIndex]
+                copiedArray[pivotIndex] = copiedArray[index]
+                copiedArray[index] = temp
+                pivotIndex += 1
+            }
+        }
+
+        let temp = copiedArray[pivotIndex]
+        copiedArray[pivotIndex] = copiedArray[endIndex]
+        copiedArray[endIndex] = temp
+
+        return (Array(copiedArray[0..<pivotIndex]), Array(copiedArray[(pivotIndex + 1)..<copiedArray.count]), copiedArray[pivotIndex])
+    }
+    
 }

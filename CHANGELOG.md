@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.1.4](https://github.com/kamsebgoralski/SimpleAlgorithms/tree/0.1.4) 
+Released on 2020-03-02
+
+### Added
+- `quickSort` algorithm
+
 ## [0.1.3](https://github.com/kamsebgoralski/SimpleAlgorithms/tree/0.1.3) 
 Released on 2020-02-24
 
